@@ -24,13 +24,13 @@ if nome:
     # Pergunta 2
     q2 = st.radio("2️⃣ Qual a cor preferida dele?", 
                   ["Rosa", "Verde", "Azul marinho"])
-    if q2 == "Azul Marinho":
+    if q2 == "Azul marinho":
         pontuacao += 1
 
     # Pergunta 3
     q3 = st.radio("3️⃣ Quanto ele calça?", 
-                  ["A", "B", "C"])
-    if q3 == "A":
+                  ["43", "42", "38"])
+    if q3 == "42":
         pontuacao += 1
 
     if st.button("Enviar respostas"):
