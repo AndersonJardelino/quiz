@@ -29,8 +29,8 @@ if nome:
 
     # Pergunta 3
     q3 = st.radio("3️⃣ Quanto ele calça?", 
-                  ["42", "44", "40"])
-    if q3 == "42":
+                  ["A", "B", "C"])
+    if q3 == "A":
         pontuacao += 1
 
     if st.button("Enviar respostas"):
@@ -41,4 +41,4 @@ if nome:
         elif pontuacao == 2:
             st.warning("👏 Bom resultado! Mas pode melhorar.")
         else:
-            st.error("💡 Abre o olho, Irdouas")
+            st.error("💡 Abre o olho, Ioudas")
