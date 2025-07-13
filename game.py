@@ -3,9 +3,9 @@ import qrcode
 from PIL import Image
 import io
 
-st.set_page_config(page_title="Quiz Corporativo", page_icon="🧠", layout="centered")
+st.set_page_config(page_title="Quiz Iroudas", page_icon="❤️", layout="centered")
 
-st.title("🧠 Quiz de Conhecimentos")
+st.title("❤️ Quiz de Conhecimentos sobre Anderson")
 
 # Entrada do nome
 nome = st.text_input("Digite seu nome para começar:")
@@ -16,29 +16,29 @@ if nome:
     pontuacao = 0
 
     # Pergunta 1
-    q1 = st.radio("1️⃣ Qual linguagem é usada para criar esse quiz?", 
-                  ["Java", "Python", "C++"])
-    if q1 == "Python":
+    q1 = st.radio("1️⃣ Qual cidade do seu nascimento?", 
+                  ["Rio de Janeiro", "Campina Grande", "João Pessoa"])
+    if q1 == "Campina Grande":
         pontuacao += 1
 
     # Pergunta 2
-    q2 = st.radio("2️⃣ Qual dessas bibliotecas é usada para visualização de dados?", 
-                  ["NumPy", "Pandas", "Matplotlib"])
-    if q2 == "Matplotlib":
+    q2 = st.radio("2️⃣ Qual a cor preferida dele?", 
+                  ["Rosa", "Verde", "Azul marinho"])
+    if q2 == "Azul Marinho":
         pontuacao += 1
 
     # Pergunta 3
-    q3 = st.radio("3️⃣ O que é Streamlit?", 
-                  ["Um framework de backend", "Uma ferramenta de visualização", "Uma biblioteca para apps interativos em Python"])
-    if q3 == "Uma biblioteca para apps interativos em Python":
+    q3 = st.radio("3️⃣ Quanto ele calça?", 
+                  ["42", "44", "40"])
+    if q3 == "42":
         pontuacao += 1
 
     if st.button("Enviar respostas"):
         st.success(f"✅ {nome}, sua pontuação foi: {pontuacao}/3")
         if pontuacao == 3:
             st.balloons()
-            st.info("🎉 Parabéns! Você foi muito bem!")
+            st.info("🎉 Parabéns! Você realmente conhece ele.")
         elif pontuacao == 2:
             st.warning("👏 Bom resultado! Mas pode melhorar.")
         else:
-            st.error("💡 Continue estudando e tente novamente!")
+            st.error("💡 Abre o olho, Irdouas")
